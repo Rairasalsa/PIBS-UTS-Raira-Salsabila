@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Profil Mahasiswa</title>
+</head>
+<body>
+    <header>
+        <img src="foto.jpg" width="60" height="60">
+        <h1>Profil Raira</h1>
+    </header>
+    
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+                <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+                <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+                <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+                <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+            </ul>
+        </nav>
+        <section id="content">
+            <article id="biodata" class="content-section">
+                <h2>Biodata</h2>
+                <p>NIM: 2023081029</p>
+                <p>Nama: Raira Salsabila</p>
+                <p>Tempat Lahir: Tangerang</p>
+                <p>Tanggal Lahir: 31 Desember 2004</p>
+                <p>Agama : Islam</p>
+            </article>
+
+            <article id="pendidikan" class="content-section" style="display: none;">
+                <h2>Pendidikan</h2>
+                <p>Program Studi Sistem Informasi</p>
+                <p>Universitas Pembangunan Jaya </p>
+            </article>
+
+            <article id="pengalaman" class="content-section" style="display: none;">
+                <h2>Pengalaman</h2>
+                <p><li>Panitia GIDHUB 2024</li></p>
+                <p><li>Staff Muda BPM</li></p>
+                <p><li>Panitia Prima UPJ 2024</li></p>
+                <p><li>Anggota Himpunan Mahasiswa Sistem Informasi</li></p>
+            </article>
+
+            <article id="keahlian" class="content-section" style="display: none;">
+                <h2>Keahlian</h2>
+                <p><li>Public Speaking</li></p>
+                <p><li>Design</li></p>
+            </article>
+
+            <article id="publikasi" class="content-section" style="display: none;">
+                <h2>Publikasi</h2>
+                <p>Tidak Ada</p>
+            </article>
+
+        </section>
+        <aside>
+            <h2>Hobi</h2>
+            <p><li>Olahraga</li></p>
+            <p><li>Membaca</li></p>
+            <p><li>Pemrograman</li></p>
+        </aside>
+   
+    <footer>
+        <!-- Social Media Links (Left-aligned) -->
+        <article class="social-media">
+            <p>Instagram: <a href="https://instagram.com/Raaiiirasls" target="_blank">@Raaiiirasls</a></p>
+            <p>Twitter: <a href="https://twitter.com/Rairaasls" target="_blank">@Rairaasls</a></p>
+        </article>
+
+        <article class="copyright">
+            <p>&copy; 2024. All Rights Reserved.</p>
+        </article>
+
+        <article class="website-info">
+            <p><strong>Raaiiirasls WEB</strong></p>
+            <p>Web ini dibuat untuk mendapatkan nilai UTS</p>
+        </article>
+    </footer>
+
+    <script>
+        
+        function showContent(section) {
+            var sections = document.getElementsByClassName('content-section');
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = 'none';
+            }
+        
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
